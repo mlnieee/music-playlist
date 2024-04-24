@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: circular;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: circular;
+    src: url(circular-std-medium-500.ttf);
+}
+
+@font-face {
+    font-family: lauren;
+    src: url(Lauren/Lauren-Regular.ttf);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    transition: transform 25ms ease-in;
+}
+
+#bell a:hover{
+    transform: scale(1.1);
+    color:white;
+}
+
+body{
+    background: black;
+    color: rgb(211, 211, 211);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background: black;
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+
+header h1{
+    margin:10px 50px;
+    font-family: 'lauren';
+    font-size: 50px;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(211, 211, 211);
+}
+
+#bell{
+    margin: 15px;
+}
+
+#fa {
+    color:rgb(211, 211, 211);
+    float: right;
+    margin-left: auto;
+}
+
+#main{
+    display: flex;
+    margin-top: 0;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background:linear-gradient(to bottom, rgba(246,108,148,0.4), rgba(34,34,34,1));
+    max-height: 87vh;
+    padding: 10px 10px;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: 0;
+}
+
+#main::-webkit-scrollbar{
+    display: none;
+}
+
+#genre{
+    padding: 10px;
+    border: none;
+    background: none;
+    padding-bottom: 0;
+}
+
+#artists{
+    border: none;
+    background: none;
+    margin-top: 10px;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    width: 91vw;
+    min-height: 270px;
+}
+
+#artists::-webkit-scrollbar{
+    display: none;
+}
+
+#artists ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#artists li{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    border:none;
+    border-radius: 10px;
+    height: 270px;
+    width: 210px;
+    background: none;
+    float:left;
+}
+
+#artists img{
+    width: 190px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#artists li:hover{
+    background:rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-height: 667px){
+    #main{
+        min-height: 667px;
+    }
+}
+
+@media only screen and (min-height: 1180px){
+    #main{
+        min-height: 1090px;
+    }
+}

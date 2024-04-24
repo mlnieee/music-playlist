@@ -1,0 +1,108 @@
+@font-face{
+    font-family: helvetica;
+    src: url(Helvetica\ Roman.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: helvetica;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: lauren;
+    src: url(Lauren/Lauren-Regular.ttf);
+}
+
+.login{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 99vh;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background: #e4eefd;
+    border-radius: 20px;
+}
+
+.column{
+    width: 100%;
+    height: 100%;
+    display:fixed;
+    justify-content: center;
+}
+
+.column img{
+    width: 500px;
+    padding: 20px 30px;
+}
+
+.content{
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-submit{
+    background: #f66c94;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 45px;
+    margin: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor:pointer;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+}
+
+.form-submit:hover{
+    background: #ee5a84;
+    transform: scale(1.1);
+}
+
+.login h3{
+    font-family: lauren;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin:0px;
+    margin-bottom: 10px;
+    padding:0;
+}
+
+input{
+    background: white;
+    border:none;
+    padding: 10px 15px;
+    border: 1px;
+    margin: 8px 0;
+    width: 50%;
+}
+
+.content .icon{
+    position: absolute;
+}
+
+.content .icon i{
+    position:relative;
+    left:440px;
+    top:20px;
+    color: black;
+}
