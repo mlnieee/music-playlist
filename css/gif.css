@@ -4,3 +4,16 @@
     height:400px;
     width: 700px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    #main img{
+        width: 90vw;
+        height: 40vh;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #main img{
+        height: 50vh;
+    }
+}
