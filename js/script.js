@@ -54,6 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
         "img/second.jpg",
     ];
 
+    const trackNames=[
+        "Attention",
+        "Hype Boy",
+        "Cookie",
+        "Hurt",
+        "Ditto",
+        "OMG",
+        "Zero",
+        "NewJeans",
+        "Super Shy",
+        "ETA",
+        "Cool With You",
+        "ASAP",
+    ];
+
     function togglePlayPause(){
         if (!isPlaying){
             if (audioPosition === 0){
@@ -109,10 +124,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTrackName(trackIndex){
-        const trackName=trackList[trackIndex];
-        const cleanedTrackName = trackName.replace("songs/newjeans/","");
-        trackNameDisplay.textContent=cleanedTrackName;
-        albumPhoto.src = albumPhotos[trackIndex];
+        const trackName=trackNames[trackIndex];
+        trackNameDisplay.textContent= trackName;
+        albumPhoto.src=albumPhotos[trackIndex];
     }
 
     volumeControl.addEventListener("input", function (){
