@@ -98,7 +98,7 @@ h3{
     color: rgb(205, 205, 205);
 }
 
-#album-photo img{
+#album-photo{
     width:400px;
     border: none;
     border-radius: 10px;
