@@ -22,13 +22,45 @@ document.addEventListener("DOMContentLoaded", function () {
         "songs/itzy/That's A No No.mp3",
         "songs/itzy/Not Shy.mp3",
         "songs/itzy/Don't Give A What.mp3",
+        "songs/itzy/SURF.mp3",
+        "songs/itzy/Loco.mp3",
+        "songs/itzy/Twenty.mp3",
+        "songs/itzy/Sneakers.mp3",
+        "songs/itzy/Boys Like You.mp3",
+        "songs/itzy/Cheshire.mp3",
     ];
 
     const albumPhotos=[
         "img/dalla dalla.jpeg",
         "img/icy.avif",
+        "img/icy.avif",
         "img/wannabe.avif",
+        "img/wannabe.avif",
+        "img/not shy.avif",
+        "img/not shy.avif",
+        "img/not shy.avif",
+        "img/loco.avif",
+        "img/loco.avif",
+        "img/sneakers.avif",
+        "img/boys like you.avif",
+        "img/boys like you.avif",
     ];
+
+    const trackNames=[
+        "Dalla Dalla",
+        "Icy",
+        "Cherry",
+        "Wannabe",
+        "That's A No No",
+        "Not Shy",
+        "Don't Give A What",
+        "SURF",
+        "Loco",
+        "#Twenty",
+        "Sneakers",
+        "Boys Like You",
+        "Cheshire",
+    ]
 
     function togglePlayPause(){
         if (!isPlaying){
@@ -85,10 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTrackName(trackIndex){
-        const trackName=trackList[trackIndex];
-        const cleanedTrackName = trackName.replace("songs/itzy/","");
-        trackNameDisplay.textContent=cleanedTrackName;
-        albumPhoto.src = albumPhotos[trackIndex];
+        const trackName=trackNames[trackIndex];
+        trackNameDisplay.textContent= trackName;
+        albumPhoto.src=albumPhotos[trackIndex];
     }
 
     volumeControl.addEventListener("input", function (){
