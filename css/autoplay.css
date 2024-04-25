@@ -278,9 +278,10 @@ input[type="range"]::-webkit-slider-thumb{
 
     #song{
         width: 81vw;
+        height: 50vh;
     }
 
-    #album-photo img{
+    #album-photo{
         width:81vw;
     }
 
@@ -307,7 +308,7 @@ input[type="range"]::-webkit-slider-thumb{
         width: 90vw;
     }
 
-    #album-photo img{
+    #album-photo{
         width: 90vw;
     }
 
