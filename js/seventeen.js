@@ -46,6 +46,22 @@ document.addEventListener("DOMContentLoaded", function () {
         "img/god of music.avif",
     ];
 
+    const trackNames=[
+        "Pretty U",
+        "Healing",
+        "To You",
+        "Rock With You",
+        "Dar+ling",
+        "Hot",
+        "Circles",
+        "_WORLD",
+        "CHEERS",
+        "今 - 明日 世界が終わっても",
+        "God of Music",
+        "Yawn",
+        "Headliner",
+    ];
+
     function togglePlayPause(){
         if (!isPlaying){
             if (audioPosition === 0){
@@ -101,10 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTrackName(trackIndex){
-        const trackName=trackList[trackIndex];
-        const cleanedTrackName = trackName.replace("songs/seventeen/","");
-        trackNameDisplay.textContent=cleanedTrackName;
-        albumPhoto.src = albumPhotos[trackIndex];
+        const trackName=trackNames[trackIndex];
+        trackNameDisplay.textContent= trackName;
+        albumPhoto.src=albumPhotos[trackIndex];
     }
 
     volumeControl.addEventListener("input", function (){
