@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const trackList=[
         "songs/seventeen/Pretty U.mp3",
-        "ssongs/seventeen/Healing.mp3",
-        "ssongs/seventeen/To You.mp3",
+        "songs/seventeen/Healing.mp3",
+        "songs/seventeen/To You.mp3",
         "songs/seventeen/Rock With You.mp3",
         "songs/seventeen/Darling.mp3",
         "songs/seventeen/Hot.mp3",
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateTrackName(trackIndex){
         const trackName=trackList[trackIndex];
-        const cleanedTrackName = trackName.replace("songs/itzy/","");
+        const cleanedTrackName = trackName.replace("songs/seventeen/","");
         trackNameDisplay.textContent=cleanedTrackName;
         albumPhoto.src = albumPhotos[trackIndex];
     }
